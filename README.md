@@ -1,5 +1,29 @@
 # 🧱 A-5 Dev Stack Builder Website
 
+## Project Overview
+
+Dev Stack is a responsive React tool for exploring development technologies and building a personal stack. Technology cards are loaded from JSON, and the selected stack can be managed with add, remove, and remove-all actions.
+
+### Built With
+
+React, Vite, JavaScript, CSS, JSON, Lucide React, and React Toastify.
+
+### Highlights
+
+- Responsive desktop and mobile navigation with a sticky header.
+- A searchable-at-a-glance technology library with ratings, difficulty, badges, and categories.
+- A live Your Stack panel with duplicate protection, loading state, and toast feedback.
+
+### React Questions
+
+1. **What is JSX, and why is it used in React?** JSX is a JavaScript syntax that lets us describe UI with HTML-like elements. It keeps a component's structure and logic easy to understand together.
+2. **What is the difference between props and state?** Props are values passed into a component by its parent. State is data managed inside a component that can change over time.
+3. **What does `useState` do, and where is it used here?** `useState` stores changing values. This project uses it for the loaded technologies, selected stack, loading/error status, and mobile menu.
+4. **What does `useEffect` do, and why is it needed here?** `useEffect` runs side effects after rendering. It loads `technologies.json` when the app starts.
+5. **Why does every `.map()` item need a unique `key`?** React uses the key to identify each item efficiently when a list changes.
+6. **What is conditional rendering?** It means showing different UI based on a condition. The stack shows an empty message when `stack.length === 0` and items otherwise.
+7. **How do parent and child components share data?** A parent passes data and callback functions through props. The child calls the callback to send an action back to the parent.
+
 ## 📅 Deadlines
 - 60 Marks: 13th September, 2026 (11:59 PM ⏱️)
 - 50 Marks: No deadline for 50 marks.
