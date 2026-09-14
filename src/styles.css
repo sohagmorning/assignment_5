@@ -73,10 +73,6 @@ button { border: 0; font: inherit; cursor: pointer; }
 .loading-state, .error-state { grid-column: 1 / -1; display: grid; place-items: center; min-height: 220px; color: var(--muted); font-size: 14px; }
 .spinner { width: 23px; height: 23px; margin-bottom: 10px; border: 3px solid #f2ccdb; border-top-color: #e94579; border-radius: 50%; animation: spin .8s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
-.about-strip { padding-block: 72px; color: white; background: #11182b; }
-.about-strip .eyebrow { color: #ff7893; }
-.about-strip h2 { margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 35px; }
-.about-strip p:last-child { max-width: 530px; margin: 12px 0 0; color: #aeb8ca; line-height: 1.7; }
 .site-footer { border-top: 1px solid var(--line); background: #fff; }
 .footer-main { display: grid; grid-template-columns: 2.1fr 1fr 1fr 1fr; gap: 30px; padding-block: 70px 58px; }
 .footer-brand p { max-width: 295px; margin: 20px 0 21px; color: var(--muted); font-size: 12px; line-height: 1.7; }

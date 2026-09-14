@@ -149,7 +149,6 @@ export default function App() {
           {loadError && <div className="error-state">{loadError}</div>}
           {!isLoading && !loadError && <div className="content-layout"><div className="technology-grid">{technologies.map((tech) => <TechnologyCard key={tech.id} tech={tech} isAdded={stack.some((item) => item.id === tech.id)} onAdd={addToStack} />)}</div><StackPanel stack={stack} onRemove={removeFromStack} onRemoveAll={removeAll} /></div>}
         </section>
-        <section className="about-strip" id="about"><div className="container"><p className="eyebrow">A BETTER WAY TO CHOOSE</p><h2>Build with intention.</h2><p>Compare the ecosystem, keep your favorites together, and make your next technical decision with confidence.</p></div></section>
       </main>
       <Footer />
       <ToastContainer position="bottom-right" autoClose={2400} hideProgressBar theme="light" />
